@@ -1,0 +1,93 @@
+/* General Styling */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #111; /* Dark background */
+    color: white;
+    padding: 20px;
+}
+
+/* Neon Glow Effect */
+.neon-text {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 2.5rem;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+    color: rgb(235, 248, 248);
+    text-shadow: 0 0 5px #0ff, 0 0 15px #0ff, 0 0 30px #00f, 0 0 50px #00f;
+    animation: glow 1.5s infinite alternate;
+}
+
+@keyframes glow {
+    from {
+        text-shadow: 0 0 5px rgb(17, 48, 48), 0 0 15px rgb(2, 18, 18), 0 0 30px rgb(111, 111, 180), 0 0 50px #00f;
+    }
+    to {
+        text-shadow: 0 0 10px #0ff, 0 0 20px #0ff, 0 0 40px #00f, 0 0 60px #00f;
+    }
+}
+
+/* Chat History Styling */
+.chat-history {
+    height: 300px;
+    overflow-y: auto;
+    background-color: rgba(0, 255, 0, 0.8); /* Green background */
+    border: 2px solid #0ff;
+    box-shadow: 0 0 10px #0ff;
+    border-radius: 10px;
+    padding: 10px;
+    color: black; /* Black text */
+    font-weight: bold;
+}
+
+/* Chat Messages */
+.message {
+    padding: 10px;
+    border-radius: 10px;
+    margin: 5px 0;
+    max-width: 80%;
+    word-wrap: break-word;
+}
+
+/* User Message */
+.user-message {
+    background-color: #ff0;
+    align-self: flex-end;
+    text-align: right;
+}
+
+/* Bot Message */
+.bot-message {
+    background-color: #00f;
+    color: white;
+    text-align: left;
+}
+
+/* Input Box */
+.custom-input {
+    background-color: #000;
+    border: 2px solid #0ff;
+    color: white;
+    transition: all 0.3s ease-in-out;
+}
+
+.custom-input:focus {
+    border-color: #0ff;
+    box-shadow: 0 0 10px #0ff;
+}
+
+/* Animated Send Button */
+.send-button {
+    background: linear-gradient(45deg, #00f, #0ff);
+    border: none;
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: all 0.3s ease-in-out;
+}
+
+.send-button:hover {
+    background: linear-gradient(45deg, #ff0, #f00);
+    transform: scale(1.1);
+    box-shadow: 0 0 10px #ff0;
+}
