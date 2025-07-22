@@ -8,7 +8,7 @@ app = Flask(__name__)
 CORS(app)
 
 # Get the Gemini API key from an environment variable
-GEMINI_API_KEY = os.environ.get("GEMINI_API_KEY", "-----------------")
+GEMINI_API_KEY = os.environ.get("GEMINI_API_KEY")
 GEMINI_API_URL = "https://generativelanguage.googleapis.com/v1beta/models/gemini-pro:generateContent"
 
 
